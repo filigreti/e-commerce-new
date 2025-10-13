@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ÆMA® — Summer Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              geist: ['"Geist"', "sans-serif"],
+            },
+            colors: {
+              olive: {
+                900: "#32330f",
+              },
+              charcoal: "#1d1d1d",
+              bone: "#f6f3ef",
+            },
+            letterSpacing: {
+              extra: "0.35em",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Geist", sans-serif;
+        background-color: #2f300d;
+      }
+      @font-face {
+        font-family: "Geist";
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: swap;
+        src: url("https://fonts.gstatic.com/s/geistsans/v1/Geist-Variable.woff2")
+            format("woff2");
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex items-center justify-center py-10">
+    <main
+      class="relative w-[360px] bg-bone border border-charcoal shadow-[0_15px_45px_rgba(0,0,0,0.45)] font-geist"
+    >
+      <div class="bg-black text-white text-[11px] uppercase tracking-[0.08em]">
+        <div class="flex items-center justify-between px-4 py-2">
+          <div class="flex items-center gap-2">
+            <div class="h-3.5 w-5 rounded-[2px] overflow-hidden ring-1 ring-white/40">
+              <div class="h-1/3 bg-black"></div>
+              <div class="h-1/3 bg-red-600"></div>
+              <div class="h-1/3 bg-yellow-400"></div>
+            </div>
+            <span>Germany (EUR)</span>
+          </div>
+          <div class="flex items-center gap-3 text-xs">
+            <svg
+              class="h-3.5 w-3.5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+            >
+              <path
+                d="M12 3l7.5 4.5v9L12 21l-7.5-4.5v-9L12 3z"
+                stroke-linejoin="round"
+              />
+              <path d="M12 3v18" />
+              <path d="M4.5 7.5L19.5 16.5" />
+            </svg>
+            <svg
+              class="h-3.5 w-3.5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+            >
+              <path
+                d="M3 7h18M5 7l1.8 11.4a1 1 0 0 0 .99.86h8.42a1 1 0 0 0 .99-.86L18 7"
+              />
+              <path d="M10 11h4" />
+            </svg>
+            <svg
+              class="h-3.5 w-3.5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+            >
+              <path
+                d="M12 5a7 7 0 0 1 7 7 7 7 0 0 1-7 7 7 7 0 0 1-4.9-11.9"
+              />
+              <path d="M12 3v4M5 12H1M12 19v4M23 12h-4" />
+            </svg>
+            <svg
+              class="h-3.5 w-3.5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+            >
+              <path
+                d="M17.5 3H6.5A3.5 3.5 0 0 0 3 6.5v11A3.5 3.5 0 0 0 6.5 21h11A3.5 3.5 0 0 0 21 17.5v-11A3.5 3.5 0 0 0 17.5 3z"
+              />
+              <path
+                d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"
+              />
+              <circle cx="17.35" cy="6.65" r="0.7" fill="currentColor" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-y border-black divide-x divide-black flex">
+        <div
+          class="w-[140px] flex items-center justify-center py-3 text-[20px] tracking-extra uppercase"
+        >
+          <span class="tracking-[0.3em] text-[18px]">ÆMA®</span>
+        </div>
+        <div class="flex-1 flex items-center justify-center py-3 text-xs uppercase">
+          Cart (0)
+        </div>
+        <div class="flex-1 flex items-stretch">
+          <button class="flex-1 flex items-center justify-center">
+            <svg
+              class="h-4 w-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#1d1d1d"
+              stroke-width="1"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3-3" stroke-linecap="round" />
+            </svg>
+          </button>
+          <div class="w-px bg-black/70"></div>
+          <button class="flex-1 flex items-center justify-center">
+            <svg
+              class="h-4 w-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#1d1d1d"
+              stroke-width="1"
+            >
+              <path
+                d="M12 21s-8-4.5-8-11a5 5 0 0 1 9-2 5 5 0 0 1 9 2c0 6.5-8 11-8 11z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="w-px bg-black/70"></div>
+          <button class="flex-1 flex items-center justify-center">
+            <svg
+              class="h-4 w-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#1d1d1d"
+              stroke-width="1"
+            >
+              <path
+                d="m5 5 6 6-6 6M13 5l6 6-6 6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <section class="relative h-[360px] border-b border-black">
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=760&q=80"
+          alt="Model"
+          class="h-full w-full object-cover"
+        />
+        <div class="absolute left-6 top-12 text-black max-w-[150px]">
+          <p class="text-xl tracking-[0.22em] leading-snug uppercase">Summer Collection</p>
+          <button
+            class="mt-6 inline-flex items-center gap-2 border-b border-black pb-1 text-[12px] uppercase tracking-[0.35em]"
+          >
+            Shop Now
+            <span class="inline-block h-px w-4 bg-black"></span>
+          </button>
+        </div>
+        <div class="absolute right-4 top-16 flex flex-col gap-3">
+          <div
+            class="h-16 w-16 border border-black bg-white/80 flex items-center justify-center"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1617127366381-8590ab7ea5b1?auto=format&fit=crop&w=200&q=80"
+              alt="Product 1"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div
+            class="h-16 w-16 border border-black bg-white/80 flex items-center justify-center"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=200&q=80"
+              alt="Product 2"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div
+            class="h-16 w-16 border border-black bg-white/80 flex items-center justify-center"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=200&q=80"
+              alt="Product 3"
+              class="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <nav class="grid grid-cols-3 text-[12px] uppercase border-b border-black">
+        <button class="bg-black text-white py-3 tracking-[0.25em]">New</button>
+        <button class="bg-white text-black py-3 tracking-[0.25em]">Best Sellers</button>
+        <button class="bg-white text-black py-3 tracking-[0.25em]">Sale</button>
+      </nav>
+
+      <section class="grid grid-cols-2 border-b border-black">
+        <article class="border-r border-black p-4 flex flex-col gap-4">
+          <div class="flex justify-between items-start text-[11px] uppercase">
+            <span class="border border-black px-2 py-1">New</span>
+            <button>
+              <svg
+                class="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1d1d1d"
+                stroke-width="1"
+              >
+                <path
+                  d="M12.1 4.53a6.57 6.57 0 0 0-9.28 9.28l9.18 9.2 9.2-9.2a6.56 6.56 0 0 0-9.27-9.28l-.1.1-.1-.1z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-center justify-center border border-black/50 bg-white aspect-[4/5]">
+            <img
+              src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=400&q=80"
+              alt="Black T-shirt"
+              class="h-36 object-contain"
+            />
+          </div>
+          <div class="flex flex-col gap-1 text-[13px] uppercase">
+            <span>T-Shirt Black</span>
+            <span class="text-[11px] tracking-[0.18em]">19,90 EUR</span>
+          </div>
+        </article>
+        <article class="p-4 flex flex-col gap-4">
+          <div class="flex justify-end">
+            <button>
+              <svg
+                class="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1d1d1d"
+                stroke-width="1"
+              >
+                <path
+                  d="M12.1 4.53a6.57 6.57 0 0 0-9.28 9.28l9.18 9.2 9.2-9.2a6.56 6.56 0 0 0-9.27-9.28l-.1.1-.1-.1z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-center justify-center border border-black/50 bg-white aspect-[4/5]">
+            <img
+              src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=400&q=80"
+              alt="Blue Jeans"
+              class="h-36 object-contain"
+            />
+          </div>
+          <div class="flex flex-col gap-1 text-[13px] uppercase">
+            <span>Jeans Blue</span>
+            <span class="text-[11px] tracking-[0.18em]">49,90 EUR</span>
+          </div>
+        </article>
+      </section>
+
+      <footer class="text-center text-[12px] uppercase tracking-[0.3em] py-4">
+        Pants
+      </footer>
+    </main>
+  </body>
+</html>
